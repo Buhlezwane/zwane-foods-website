@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zwane Foods | Home</title>
+
+    <meta name="description" content="Discover Zwane Foods for fresh groceries, bakery products, beverages and ready-made meals at affordable prices.">
+    <meta name="keywords" content="Zwane Foods, fresh groceries, bakery products, beverages, ready-made meals, affordable food, Johannesburg, Durban">
+    <meta name="author" content="Zwane Foods">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1f7a4d">
+
+    <link rel="canonical" href="https://buhlezwane.github.io/zwane-foods-website/">
+    <meta property="og:title" content="Zwane Foods | Home">
+    <meta property="og:description" content="Discover Zwane Foods for fresh groceries, bakery products, beverages and ready-made meals at affordable prices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://buhlezwane.github.io/zwane-foods-website/">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1>Zwane Foods</h1>
+            <p>Fresh Food, Better Living</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+      
+     <section class="hero">
+
+    <picture>
+        <source
+            media="(max-width: 480px)"
+            srcset="images/food-small.jpg">
+
+        <source
+            media="(max-width: 768px)"
+            srcset="images/food-medium.jpg">
+
+        <img
+            src="images/food.jpg"
+            srcset="
+                images/food-small.jpg 480w,
+                images/food-medium.jpg 768w,
+                images/food.jpg 1200w"
+            sizes="(max-width: 480px) 100vw,
+                   (max-width: 768px) 100vw,
+                   100vw"
+            alt="Grilled chicken and rice meal served with vegetables at Zwane Foods" tabindex="0" role="button" aria-label="Enlarge the Zwane Foods food photograph">
+    </picture>
+
+    <div class="hero-content">
+        <h2>Welcome to Zwane Foods</h2>
+
+        <p>
+            Quality food products at affordable prices
+            for families, students and the local community.
+        </p>
+
+        <a href="products.html" class="button">
+            View Our Products
+        </a>
+    </div>
+
+</section>            
+
+     
+        <section class="intro">
+
+            <h2>Fresh Food For Everyone</h2>
+
+            <p>
+                Zwane Foods is a food business that provides
+                fresh groceries, bakery products, beverages and ready-made
+                meals. Our goal is to provide quality food while giving
+                our customers friendly and reliable service.
+            </p>
+
+         
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Fresh Products</h3>
+
+                    <p>
+                        We offer a variety of fresh and quality
+                        food products for everyday needs.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Affordable Prices</h3>
+
+                    <p>
+                        Our products are priced to give customers
+                        good value for their money.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Great Service</h3>
+
+                    <p>
+                        We aim to provide friendly and helpful
+                        customer service.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="food-gallery content" aria-labelledby="galleryHeading">
+            <h2 id="galleryHeading">A Taste of Zwane Foods</h2>
+            <p>Take a closer look at some of the food we feature.</p>
+            <div class="gallery-grid">
+                <figure>
+                    <img class="gallery-image" src="images/food.jpg" data-full="images/food.jpg" alt="Grilled chicken and rice meal with vegetables" loading="lazy" tabindex="0" role="button" aria-label="Enlarge grilled chicken and rice photograph">
+                    <figcaption>Freshly prepared meals</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" src="images/food-medium.jpg" data-full="images/food-medium.jpg" alt="Roast chicken meal served with chips and salad" loading="lazy" tabindex="0" role="button" aria-label="Enlarge roast chicken meal photograph">
+                    <figcaption>Ready-made food options</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" src="images/food-small.jpg" data-full="images/food-small.jpg" alt="Fresh salad bowl being served" loading="lazy" tabindex="0" role="button" aria-label="Enlarge fresh salad photograph">
+                    <figcaption>Fresh food choices</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <div id="imageLightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged food photograph" hidden>
+            <button type="button" id="closeLightbox" class="lightbox-close" aria-label="Close enlarged image">Close</button>
+            <img id="lightboxImage" src="images/food.jpg" alt="Grilled chicken and rice meal served with vegetables at Zwane Foods">
+        </div>
+    </main>
+
+   
+    <footer>
+        <p>&copy; 2026 Zwane Foods. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+
+</body>
+
+</html>

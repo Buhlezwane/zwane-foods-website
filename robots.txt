@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://buhlezwane.github.io/zwane-foods-website/sitemap.xml

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zwane Foods | Enquiry</title>
+
+    <!-- Connect to CSS -->
+    <meta name="description" content="Ask Zwane Foods about groceries, bakery products, beverages and ready-made meals using our product enquiry form.">
+    <meta name="keywords" content="Zwane Foods, fresh groceries, bakery products, beverages, ready-made meals, affordable food, Johannesburg, Durban">
+    <meta name="author" content="Zwane Foods">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1f7a4d">
+
+    <link rel="canonical" href="https://buhlezwane.github.io/zwane-foods-website/enquiry.html">
+    <meta property="og:title" content="Zwane Foods | Enquiry">
+    <meta property="og:description" content="Ask Zwane Foods about groceries, bakery products, beverages and ready-made meals using our product enquiry form.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://buhlezwane.github.io/zwane-foods-website/enquiry.html">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1>Zwane Foods</h1>
+            <p>Fresh Food, Better Living</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="page-title">
+
+            <h2>Product Enquiry</h2>
+
+            <p>
+                Have a question? Send us an enquiry.
+            </p>
+
+        </section>
+
+        <section class="form-container">
+
+            <form id="enquiryForm" action="https://formsubmit.co/ajax/your-business-email@example.com" method="POST" novalidate>
+
+                <label for="name">
+                    Full Name:
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    minlength="2"
+                    maxlength="60"
+                    autocomplete="name"
+                >
+
+                <label for="email">
+                    Email Address:
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                >
+
+                <label for="product">
+                    Product:
+                </label>
+
+                <select
+                    id="product"
+                    name="product"
+                    required
+                >
+
+                    <option value="">
+                        Select a product
+                    </option>
+
+                    <option value="groceries">
+                        Fresh Groceries
+                    </option>
+
+                    <option value="bakery">
+                        Bakery Products
+                    </option>
+
+                    <option value="beverages">
+                        Beverages
+                    </option>
+
+                    <option value="meals">
+                        Ready-Made Meals
+                    </option>
+
+                </select>
+
+                <label for="message">
+                    Your Enquiry:
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required
+                    minlength="10"
+                    maxlength="1000"
+                ></textarea>
+
+                <button type="submit">
+                    Submit Enquiry
+                </button>
+
+                <p class="form-status" id="enquiryStatus" role="status" aria-live="polite"></p>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Zwane Foods. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

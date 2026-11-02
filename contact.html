@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zwane Foods | Contact</title>
+
+    <meta name="description" content="Contact Zwane Foods for general enquiries and information about our Johannesburg and Durban stores.">
+    <meta name="keywords" content="Zwane Foods, fresh groceries, bakery products, beverages, ready-made meals, affordable food, Johannesburg, Durban">
+    <meta name="author" content="Zwane Foods">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1f7a4d">
+
+    <link rel="canonical" href="https://buhlezwane.github.io/zwane-foods-website/contact.html">
+    <meta property="og:title" content="Zwane Foods | Contact">
+    <meta property="og:description" content="Contact Zwane Foods for general enquiries and information about our Johannesburg and Durban stores.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://buhlezwane.github.io/zwane-foods-website/contact.html">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1>Zwane Foods</h1>
+            <p>Fresh Food, Better Living</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="page-title">
+
+            <h2>Contact Us</h2>
+
+            <p>
+                We would love to hear from you.
+            </p>
+
+        </section>
+
+        <section class="locations">
+
+            <div class="location-card">
+
+                <h3>Zwane Foods Johannesburg</h3>
+
+                <p>
+                    25 Main Street<br>
+                    Johannesburg, Gauteng
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    011 555 1234
+                </p>
+
+                <p>
+                    <strong>Hours:</strong>
+                    Monday - Saturday, 08:00 - 18:00
+                </p>
+
+            </div>
+
+            <div class="location-card">
+
+                <h3>Zwane Foods Durban</h3>
+
+                <p>
+                    15 Florida Road<br>
+                    Durban, KwaZulu-Natal
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    031 555 5678
+                </p>
+
+                <p>
+                    <strong>Hours:</strong>
+                    Monday - Saturday, 08:00 - 18:00
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="map-section content">
+            <h2>Find Our Stores</h2>
+            <p>The markers show the approximate city centres, not verified street addresses.</p>
+            <div id="storeMap" class="store-map" role="region" aria-label="Map showing approximate Johannesburg and Durban locations"></div>
+            <p class="map-links"><a href="https://www.openstreetmap.org/search?query=Johannesburg%2C%20South%20Africa" target="_blank" rel="noopener">View Johannesburg map</a> · <a href="https://www.openstreetmap.org/search?query=Durban%2C%20South%20Africa" target="_blank" rel="noopener">View Durban map</a></p>
+        </section>
+
+        <section class="form-container">
+
+            <h2>Send Us a Message</h2>
+
+            <form id="contactForm" action="https://formsubmit.co/ajax/your-business-email@example.com" method="POST" novalidate>
+
+                <label for="contactName">
+                    Full Name:
+                </label>
+
+                <input
+                    type="text"
+                    id="contactName"
+                    name="contactName"
+                    required
+                    minlength="2"
+                    maxlength="60"
+                    autocomplete="name"
+                >
+
+                <label for="contactEmail">
+                    Email Address:
+                </label>
+
+                <input
+                    type="email"
+                    id="contactEmail"
+                    name="contactEmail"
+                    required
+                    autocomplete="email"
+                >
+
+                <label for="contactMessage">
+                    Message:
+                </label>
+
+                <textarea
+                    id="contactMessage"
+                    name="contactMessage"
+                    rows="6"
+                    required
+                    minlength="10"
+                    maxlength="1500"
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+                <p class="form-status" id="contactStatus" role="status" aria-live="polite"></p>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Zwane Foods. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
